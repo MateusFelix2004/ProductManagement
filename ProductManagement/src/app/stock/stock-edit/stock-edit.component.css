@@ -1,0 +1,57 @@
+.container {
+    margin-top: 30px;
+  }
+  
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Espaço inferior para separar dos outros elementos */
+  }
+  
+  .image-container {
+    width: 200px; /* Define um tamanho fixo para a imagem */
+    height: 200px; /* Define uma altura fixa para a imagem */
+    overflow: hidden; /* Oculta qualquer parte da imagem que exceda o contêiner */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajuste para cobrir completamente o elemento */
+    background-image: url('https://giassi.vtexassets.com/arquivos/ids/2050832/Biscoito-Rosquinha-Coco-Isabela-Pacote-300g.png');
+  }
+  
+  .product-name {
+    font-size: 1.2em; /* Tamanho da fonte do nome do produto */
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove padding padrão */
+  }
+  
+  .input-field {
+    margin-bottom: 20px;
+  }
+  
+  .input-field input {
+    width: 100%; /* Garante que os campos de entrada se ajustem ao seu contêiner */
+  }
+  
+  .input-field.col.s12 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    margin-right: 10px;
+  }
+  
+  /* Ajuste para garantir que todos os campos e botões estejam alinhados */
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+  }
+  

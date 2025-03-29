@@ -1,0 +1,45 @@
+<div class="container">
+    <h2 class="list-title">Adicionar Novo Produto</h2>
+    <div class="row">
+        <form class="col s12">
+            <!-- Imagem do Produto -->
+            <div class="image-wrapper">
+                <div id="image-preview" class="image-container" style="background-image: url('https://www.schulz.com.br/wp-content/themes/schulz/img/produto-sem-imagem-540x540.png');">
+                    <!-- Preview da imagem aqui -->
+                </div>
+                <span href="#" class="icon-btn" title="Trocar Imagem" onclick="document.getElementById('file-input').click();">
+                    <i class="material-icons" translate="no">edit</i>
+                </span>
+            </div>
+
+            <div class="file-field input-field">
+                <input type="file" id="file-input" (change)="previewImage($event)" style="display: none;">
+            </div>
+
+            <!-- Nome do Produto -->
+            <div class="input-field col s12 m8 l6">
+                <input id="name" type="text" class="validate" [value]="nome" (input)="this.nome = prodNome.value" #prodNome required>
+                <label for="name">Nome</label>
+            </div>
+
+            <!-- Preço do Produto -->
+            <div class="input-field col s12 m8 l6">
+                <input
+                    id="preco"
+                    class="materialize-textarea"
+                    type="text"
+                    [value]="formatAsCurrency(preco)"
+                    (input)="processInput($event)"
+                    required
+                />
+                <label for="preco">Preço</label>
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="input-field col s12">
+                <a (click)="adicionar()" class="waves-effect waves-light btn">Salvar</a>
+                <a routerLink="/products" class="waves-effect waves-light btn red">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+/* Estilo para o header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* Ajuste conforme a cor de fundo do seu site */
+  border-bottom: 1px solid #ddd; /* Linha de separação abaixo do header */
+}
+
+/* Estilo para o nome do site (brand) */
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-link {
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: #2196F3; /* Cor do texto do link */
+}
+
+.brand-link h1 {
+  margin: 0;
+  font-size: 24px;
+  cursor: pointer; /* Adiciona um cursor de ponteiro para indicar que é clicável */
+}
+
+/* Contêiner para os ícones de ação */
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para o ícone de voltar para a página inicial */
+.home-icon i {
+  font-size: 35px;
+  color: #2196F3; /* Cor do ícone */
+  cursor: pointer;
+  margin-right: 15px; /* Espaçamento entre o ícone de home e o ícone de logout */
+}
+
+.home-icon i:hover {
+  color: #0d47a1; /* Cor ao passar o mouse sobre o ícone */
+}
+
+/* Estilo para o ícone de logout */
+.logout-icon i {
+  font-size: 35px;
+  color: #2196F3; /* Cor do ícone */
+  cursor: pointer;
+  margin-right: 15px; /* Espaçamento entre o botão de logout e o ícone de configuração */
+}
+
+.logout-icon i:hover {
+  color: #0d47a1; /* Cor ao passar o mouse sobre o ícone */
+}
+
+/* Estilo para o ícone de configuração */
+.settings-icon i {
+  font-size: 35px;
+  color: #2196F3; /* Cor do ícone */
+  cursor: pointer;
+}
+
+.settings-icon i:hover {
+  color: #0d47a1; /* Cor ao passar o mouse sobre o ícone */
+}

@@ -1,0 +1,75 @@
+.container {
+    margin-top: 30px; /* Aumentado para melhor espaçamento */
+}
+
+.image-wrapper {
+    display: flex;
+    align-items: center; /* Alinha verticalmente a imagem e o botão */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+}
+
+.image-container {
+    width: 200px; /* Define um tamanho fixo para a imagem */
+    height: 200px; /* Define uma altura fixa para a imagem */
+    margin-right: 10px; /* Espaço entre a imagem e o botão */
+    overflow: hidden; /* Oculta qualquer parte da imagem que exceda o contêiner */
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover; /* Ajuste para cobrir completamente o elemento */
+}
+
+.icon-btn {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px; /* Aumenta o tamanho do botão */
+    cursor: pointer;
+    color: #2196F3; /* Cor padrão do Materialize para ícones */
+}
+
+.icon-btn:hover {
+    color: #0d47a1; /* Cor ao passar o mouse */
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%; /* Garante que os campos de entrada se ajustem ao seu contêiner */
+    max-width: 500px; /* Define uma largura máxima para os campos de entrada */
+}
+
+.input-field.col.s12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field.col.m8.l6 {
+    max-width: 500px; /* Limita a largura dos campos de entrada */
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+/* Ajuste para garantir que todos os campos e botões estejam alinhados */
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}
+
+.list-title {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #2196F3; /* Cor que combina com o restante do tema */
+    font-size: 24px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o título */
+}

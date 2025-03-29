@@ -1,0 +1,43 @@
+.container {
+    margin-top: 20px;
+}
+
+.add-user-button {
+    background-color: #ffffff; /* Fundo branco para o botão */
+    color: #2196F3; /* Cor do texto */
+    border: 1px solid #2196F3; /* Borda azul */
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Aponta que o botão é clicável */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento abaixo do botão */
+    display: flex; /* Flexbox para alinhar ícone e texto */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Largura total em dispositivos móveis */
+}
+
+.add-user-button:hover {
+    background-color: #e0e0e0; /* Cor ao passar o mouse */
+    border-color: #0d47a1; /* Cor da borda ao passar o mouse */
+}
+
+.responsive-table {
+    width: 100%; /* Largura total da tabela */
+}
+
+.action-icon {
+    margin: 0 5px; /* Margem lateral dos ícones */
+    cursor: pointer; /* Aponta que o ícone é clicável */
+    color: #2196F3; /* Cor padrão dos ícones */
+}
+
+.action-icon:hover {
+    color: #0d47a1; /* Cor ao passar o mouse */
+}
+
+.list-title {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #2196F3; /* Cor que combina com o restante do tema */
+    font-size: 24px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o título */
+}

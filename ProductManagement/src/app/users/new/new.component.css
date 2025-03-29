@@ -1,0 +1,39 @@
+.container {
+    margin-top: 30px;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field input {
+    width: 100%; /* Garante que os campos de entrada se ajustem ao seu contêiner */
+    max-width: 500px; /* Define uma largura máxima para os campos de entrada */
+}
+
+.input-field.col.s12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field.col.m8.l6 {
+    max-width: 500px; /* Limita a largura dos campos de entrada */
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+/* Ajuste para garantir que todos os campos e botões estejam alinhados */
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}

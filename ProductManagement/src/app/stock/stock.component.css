@@ -1,0 +1,24 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .table {
+    width: 100%;
+  }
+  
+  .action-icon {
+    margin: 0 5px;
+    cursor: pointer;
+    color: #2196F3; /* Cor padrão do Materialize para ícones */
+  }
+  
+.action-icon:hover {
+    color: #0d47a1; /* Cor ao passar o mouse */
+}
+  
+.list-title {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #2196F3; /* Cor que combina com o restante do tema */
+    font-size: 24px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o título */
+}

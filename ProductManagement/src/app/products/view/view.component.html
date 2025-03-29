@@ -1,0 +1,21 @@
+<div class="container">
+  <button class="btn back-btn" (click)="goBack()">
+    <i class="material-icons">arrow_back</i>
+    <span>Voltar</span>
+  </button>
+  <div class="card">
+    <div class="card-image" [style.backgroundImage]="'url(' + produto?.foto + ')'">
+      <span class="card-title">{{ produto?.nome }}</span>
+    </div>
+    <div class="card-content">
+      <!-- Preço do produto -->
+      <div class="card-price">
+        <span>{{ produto?.preco | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</span>
+      </div>
+    </div>
+    <div class="card-action">
+      <a class="btn blue" [routerLink]="['/products/edit', id]">Editar</a>
+      <a class="btn red" (click)="delete(id)">Excluir</a>
+    </div>
+  </div>
+</div>

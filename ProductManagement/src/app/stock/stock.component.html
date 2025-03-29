@@ -1,0 +1,29 @@
+<div class="container">
+    <h2 class="list-title">Estoque</h2>
+    <table class="responsive-table highlight">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let estoq of estoques">
+                <td>{{ estoq.id }}</td>
+                <td>{{ estoq.produto }}</td>
+                <td>{{ estoq.quantidade }}</td>
+                <td>
+                    <a [routerLink]="['/products/view',  estoq.id]" class="action-icon" title="Ver">
+                        <i class="material-icons" translate="no">visibility</i>
+                    </a>
+                    <a [routerLink]="['edit/',  estoq.id]" class="action-icon" title="Editar">
+                        <i class="material-icons" translate="no">edit</i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+  

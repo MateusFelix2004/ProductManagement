@@ -1,0 +1,36 @@
+<div class="container">
+    <h2 class="list-title">Produtos</h2>
+    <button class="add-product-button" routerLink="add">
+        <i class="material-icons left">add</i>
+        Adicionar Novo Produto
+    </button>
+    <table class="responsive-table highlight">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let prod of produtos">
+                <td>{{ prod.id }}</td>
+                <td>{{ prod.nome }}</td>
+                <td>{{ prod.preco | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</td>
+
+                <td>
+                    <a [routerLink]="['view', prod.id]" class="action-icon" title="Ver">
+                        <i class="material-icons" translate="no">visibility</i>
+                    </a>
+                    <a [routerLink]="['edit', prod.id]" class="action-icon" title="Editar">
+                        <i class="material-icons" translate="no">edit</i>
+                    </a>
+                    <a (click)="delete(prod.id)" class="action-icon" title="Excluir">
+                        <i class="material-icons" translate="no">delete</i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

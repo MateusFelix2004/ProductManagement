@@ -1,0 +1,80 @@
+.container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid #2196F3;
+}
+
+.icon-btn {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    color: #2196F3;
+    margin-left: 10px;
+}
+
+.icon-btn:hover {
+    color: #0d47a1;
+}
+
+.email-field {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-field {
+    display: flex;
+    justify-content: center;
+}
+
+.input-field input {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Centraliza o botão de salvar abaixo do email */
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-wrapper a {
+    display: block;
+    width: auto;
+    text-align: center;
+}
+
+.btn {
+    margin: 0 auto; /* Garante que o botão fique centralizado */
+}
+
+/* Estilo para botão desativado */
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.active {
+    opacity: 1;
+}

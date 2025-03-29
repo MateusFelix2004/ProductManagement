@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <form class="col s12">
+            <!-- Imagem do Usuário -->
+            <div class="image-wrapper">
+                <div id="image-preview" class="image-container" [style.backgroundImage]="'url(' + user?.foto + ')'">
+                    <!-- Contêiner de imagem -->
+                </div>
+                <!-- Ícone de edição como label para o input file -->
+                <label for="file-input" class="icon-btn">
+                    <i class="material-icons" translate="no">edit</i>
+                </label>
+            </div>
+    
+            <div class="file-field input-field">
+                <input type="file" id="file-input" (change)="previewImage($event)" style="display: none;">
+            </div>
+    
+            <!-- Email do Usuário -->
+            <div class="input-field col s12 email-field">
+                <input id="email" type="text" class="validate" [value]="user?.email" disabled />
+            </div>
+    
+            <!-- Botão de Salvar Alterações -->
+            <div class="input-field col s12">
+                <a (click)="salvar()" [class.disabled]="!foto" class="waves-effect waves-light btn" [class.active]="foto">Salvar Alterações</a>
+            </div>
+        </form>
+    </div>
+</div>

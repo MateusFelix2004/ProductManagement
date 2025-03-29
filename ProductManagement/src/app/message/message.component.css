@@ -1,0 +1,90 @@
+.message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Mantém o componente acima de todos */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 
+        0 -4px 16px rgba(0, 0, 0, 0.3),
+        0 4px 8px rgba(0, 0, 0, 0.2),
+        0 2px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 80%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0); /* Começa pequeno */
+    animation: scaleIn 0.5s forwards; /* Animação aplicada ao entrar */
+}
+.message-box.success {
+    border-left: 5px solid #4CAF50; /* Verde para sucesso */
+}
+
+.message-box.error {
+    border-left: 5px solid #F44336; /* Vermelho para erro */
+}
+
+.message-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message-content i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.message-content p {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.message-content a {
+    margin-top: 20px;
+    background-color: #2196F3; /* Cor do botão OK */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex; /* Usar flexbox para centralizar texto */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center; /* Alinhamento do texto */
+}
+
+.message-content a:hover {
+    background-color: #1976D2;
+}
+
+.message-box.success i {
+    color: #4CAF50; /* Cor do ícone para sucesso */
+}
+
+.message-box.error i {
+    color: #F44336; /* Cor do ícone para erro */
+}
+
+
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.1); /* Leve aumento */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1); /* Retorna ao tamanho original */
+    }
+}

@@ -1,0 +1,32 @@
+<div class="container">
+    <h2 class="list-title">Usuários</h2>
+    <button class="add-user-button" routerLink="new">
+        <i class="material-icons left">add</i>
+        Adicionar Novo Usuário
+    </button>
+    <table class="responsive-table highlight">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Registro</th>
+                <th>Permissao</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of usuarios">
+                <td>{{ user.id }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.registro.substr(0, 10) }}
+                </td>
+                <td>{{ user.permissao }}</td>
+                <td>
+                    <a (click)="excluir(user.id)" class="action-icon" title="Excluir" *ngIf="id != user.id">
+                        <i class="material-icons" translate="no">delete</i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

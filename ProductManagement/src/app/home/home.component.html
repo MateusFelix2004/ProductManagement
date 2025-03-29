@@ -1,0 +1,26 @@
+<div class="home-container">
+    <h2>Sistema de Controle de Produtos</h2>
+    <div class="card-container">
+      <div class="card" routerLink="products">
+        <div class="card-content">
+          <span class="material-icons">shopping_cart</span>
+          <span>Produtos</span>
+        </div>
+      </div>
+      <div class="card" [class.disabled]="permissao === 2" routerLink="stock">
+        <div class="card-content">
+          <span class="material-icons">warehouse</span>
+          <span>Estoque</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card" [class.disabled]="permissao === 2" routerLink="users">
+        <div class="card-content">
+          <span class="material-icons">group</span>
+          <span>Usuários</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,47 @@
+.home-container {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 50px; /* Margem superior para espaçamento */
+}
+
+.card-container {
+    display: flex; /* Flexbox para alinhar os cartões lado a lado */
+    justify-content: center; /* Centraliza os cartões */
+    margin-top: 20px; /* Margem superior para espaçamento entre o título e os cartões */
+}
+
+.card {
+    background-color: #ffffff; /* Fundo branco para o cartão */
+    border: 1px solid #2196F3; /* Borda azul para cartões ativos */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin: 0 10px; /* Margem lateral para os cartões */
+    width: 120px; /* Largura fixa para os cartões */
+    display: flex; /* Flexbox para centralizar conteúdo interno */
+    flex-direction: column; /* Coloca ícone e texto em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    cursor: pointer; /* Aponta que o cartão é clicável */
+    transition: box-shadow 0.2s; /* Transição suave para sombra */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(33, 150, 243, 0.5); /* Sombra azul ao passar o mouse */
+}
+
+.card-content {
+    color: #2196F3; /* Cor do texto dos cartões */
+}
+
+.disabled {
+    background-color: #e0e0e0; /* Cor de fundo para o cartão desativado */
+    color: #b0b0b0; /* Cor do texto para o cartão desativado */
+    border: none; /* Remove a borda do cartão desativado */
+    pointer-events: none; /* Desativa a interação */
+}
+
+.disabled .card-content {
+    color: #b0b0b0; /* Cor do texto e ícone para o cartão desativado */
+}
+
+.disabled .material-icons {
+    color: #b0b0b0; /* Cor do ícone para o cartão desativado */
+}

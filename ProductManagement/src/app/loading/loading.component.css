@@ -1,0 +1,56 @@
+/* Estilo para o overlay de carregamento */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Cor de fundo semi-transparente */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    z-index: 1000; /* Certifique-se de que o overlay está sobre outros conteúdos */
+  }
+  
+  /* Estilo para o spinner de carregamento */
+  .loading-spinner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .spinner-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #2196F3; /* Cor do ponto */
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  /* Animação de pulsação */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Espaçamento entre os pontos */
+  .spinner-dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .spinner-dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  

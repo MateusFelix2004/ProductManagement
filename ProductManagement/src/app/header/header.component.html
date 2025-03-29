@@ -1,0 +1,18 @@
+<header class="header" *ngIf="usuarioAutenticado">
+  <div class="brand">
+    <a href="/" class="brand-link">
+      <h1>Sistema de Controle de Produtos</h1>
+    </a>
+  </div>
+  <div class="actions">
+    <div class="home-icon" routerLink="/">
+      <i class="material-icons" translate="no">home</i>
+    </div>
+    <div class="logout-icon" (click)="logout()">
+      <i class="material-icons" translate="no">logout</i>
+    </div>
+    <div class="settings-icon" routerLink="/settings">
+      <i class="material-icons" translate="no">settings</i>
+    </div>
+  </div>
+</header>

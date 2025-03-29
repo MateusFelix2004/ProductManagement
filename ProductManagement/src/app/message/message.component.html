@@ -1,0 +1,9 @@
+<div class="message-box" [class.success]="tipo === 'sucesso'" [class.error]="tipo === 'erro'" *ngIf="mostrarMensagem">
+    <div class="message-content">
+      <i class="material-icons" *ngIf="tipo === 'sucesso'">check_circle</i>
+      <i class="material-icons" *ngIf="tipo === 'erro'">error</i>
+      <p>{{ mensagem }}</p>
+      <a class="waves-effect waves-light btn" (click)="fechar()">OK</a>
+    </div>
+  </div>
+  
